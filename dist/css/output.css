@@ -54,14 +54,14 @@ a {
 }
 
 body {
-  background-color: rgb(250, 250, 250);
+  background-color: #fafafa;
 }
 
 header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgb(250, 250, 250);
+  background-color: #fafafa;
 }
 header .flex-header {
   display: flex;
@@ -80,6 +80,7 @@ header .flex-header span {
   flex: 1;
 }
 header .flex-header span a {
+  color: #18181b;
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 700;
@@ -97,9 +98,12 @@ header .flex-header .navbar li {
   position: relative;
 }
 header .flex-header .navbar li a {
+  color: #18181b;
   text-decoration: none;
+  font-weight: 500;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
+  color: #71717a;
 }
 header .flex-header .button {
   display: flex;
@@ -110,13 +114,14 @@ header .flex-header .button {
 header .flex-header .button button {
   display: flex;
   align-items: center;
-  background-color: rgb(250, 250, 250);
+  background-color: #fafafa;
   border: none;
   border-radius: 9999px;
   column-gap: 0.5rem;
   font-size: 0.875rem;
   padding: 0.5rem 0.75rem;
   font-weight: 500;
+  color: #18181b;
 }
 header .flex-header .button button:hover {
   background-color: white;
@@ -125,8 +130,55 @@ header .flex-header .button button:hover {
 main {
   min-height: calc(100vh - 4rem);
 }
-main .getStarted {
+main .introduction {
+  margin-inline: auto;
+  padding-inline: 4rem;
+  margin-inline: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
   padding-block: 10rem;
+  margin: auto;
+}
+main .introduction h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+main .introduction p {
+  font-size: 1.125rem;
+  color: #52525b;
+  margin-top: 1.5rem;
+  letter-spacing: -0.025em;
+}
+main .introduction .flex-buttons {
+  margin-top: 2.5rem;
+  column-gap: 1.5rem;
+  justify-content: center;
+  display: flex;
+}
+main .introduction .flex-buttons .button-dark, main .introduction .flex-buttons .button-light {
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  column-gap: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+}
+main .introduction .flex-buttons .button-light {
+  background: #fafafa;
+  color: #3f3f46;
+  border: solid 1px lightgray;
+}
+main .introduction .flex-buttons .button-light:hover {
+  background-color: #f2f2f2;
+}
+main .introduction .flex-buttons .button-dark {
+  background: #18181b;
+  color: white;
+}
+main .introduction .flex-buttons .button-dark:hover {
+  background-color: hsl(240, 6%, 25%);
 }
 
 /*# sourceMappingURL=output.css.map */
