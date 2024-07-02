@@ -15,36 +15,75 @@
   </head>
   <body>
     <header>
-      <div class="flex-header">
-        <span>
-          <a href="#">Nuxt UI Pro</a>
-        </span>
+      <div class="header-container">
+        <div class="logo">
+          <span>
+            <a href="#">Nuxt UI Pro</a>
+          </span>
+        </div>
 
-        <ul class="navbar">
-          <li class="list-item">
-            <a href="">Features</a>
-          </li>
-          <li class="list-item">
-            <a href="">Pricing</a>
-          </li>
-          <li class="list-item">
-            <a href="">Testimonials</a>
-          </li>
-          <li class="list-item">
-            <a href="">FAQ</a>
-          </li>
-        </ul>
+        <div class="navbar">
+          <ul class="navbar-mobile">
+            <li>
+              <a href="">Features</a>
+            </li>
+            <li>
+              <a href="">Pricing</a>
+            </li>
+            <li>
+              <a href="">Testimonials</a>
+            </li>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+          </ul>
 
-        <div class="button">
+          <ul class="navbar-desktop">
+            <li>
+              <a href="">Features</a>
+            </li>
+            <li>
+              <a href="">Pricing</a>
+            </li>
+            <li>
+              <a href="">Testimonials</a>
+            </li>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-button">
           <button type="button">
             <span> Sign in </span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
+
+        <div class="menu-button">
+          <button onclick="toggleClass()">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
       </div>
     </header>
     <main>
-      <section class="introduction">
+      <section class="introduction" style="display: none;">
         <h1>Build your landing in seconds</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -84,5 +123,6 @@
       <section class="faq"></section>
     </main>
     <footer></footer>
+    <script src="index.js"></script>
   </body>
 </html>
