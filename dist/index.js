@@ -1,3 +1,6 @@
 function toggleClass() {
-    document.querySelector(".navbar-mobile").classList.toggle("active");
+  const navbar = document.querySelector(".navbar-mobile");
+  const isOpen = navbar.classList.contains("active");
+  navbar.classList.toggle("active");
+  document.querySelector("main").style.display = isOpen ? "block" : "none";
 }
