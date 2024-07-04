@@ -225,4 +225,323 @@ header .header-container .header-button button {
   }
 }
 
+main {
+  background-color: #fafafa;
+  padding-inline: 1rem;
+}
+main h3 {
+  font-size: 1rem;
+  color: #6366f1;
+}
+main .introduction {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding-block: 6rem;
+  gap: 4rem;
+}
+main .introduction .introduction-headline h1 {
+  padding-inline: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+main .introduction .introduction-headline p {
+  color: #52525b;
+  letter-spacing: -0.025em;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: 1.5rem;
+}
+main .introduction .introduction-headline .flex-buttons {
+  margin-top: 2.5rem;
+  row-gap: 0.75rem;
+  column-gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .introduction .introduction-headline .flex-buttons .button {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+  color: #3f3f46;
+  background-color: rgb(250, 250, 250);
+  border: 1.5px solid rgb(211, 211, 211);
+}
+main .introduction .introduction-headline .flex-buttons .button-dark {
+  color: white;
+  background-color: #18181b;
+}
+main .introduction .introduction-headline .flex-buttons a {
+  font-size: inherit;
+  line-height: 1.5rem;
+  padding: 0.625rem 0.875rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+main .introduction .rect {
+  border: 1.5px solid #d3d3d3;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+main .introduction .rect .inner-rect {
+  border: 1px dotted #d3d3d3;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  height: 12.5rem;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg  fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40' stroke='%23d3d3d3' stroke-width='1.5' fill='none'/%3E%3C/g%3E%3C/svg%3E");
+}
+main .introduction .references {
+  display: flex;
+  flex-direction: column;
+}
+main .introduction .references h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+main .introduction .references .logos {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+main .introduction .references .logos span svg {
+  color: #18181b;
+  width: 3rem;
+  height: 3rem;
+}
+main .features {
+  display: flex;
+  flex-direction: column;
+  padding-block: 6rem;
+  gap: 4rem;
+}
+main .features .features-description {
+  text-align: center;
+}
+main .features .features-description h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+main .features .features-description h2 {
+  color: #18181b;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+main .features .features-description p {
+  color: #52525b;
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+main .features .grid-features {
+  display: grid;
+  gap: 2rem;
+}
+main .features .grid-features .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1.5px solid lightgray;
+  border-radius: 0.75rem;
+}
+main .features .grid-features .card svg {
+  width: 2rem;
+  height: 2rem;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+}
+main .features .grid-features .card svg + p {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #18181b;
+  font-size: 1rem;
+}
+main .features .grid-features .card p {
+  color: #71717a;
+  font-size: 15px;
+}
+main .pricing {
+  display: flex;
+  flex-direction: column;
+  padding-block: 6rem;
+  gap: 4rem;
+}
+main .pricing .pricing-description {
+  text-align: center;
+}
+main .pricing .pricing-description h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+main .pricing .pricing-description h2 {
+  color: #18181b;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+main .pricing .pricing-description p {
+  color: #52525b;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+main .pricing .grid-pricing {
+  display: grid;
+  gap: 2rem;
+}
+main .pricing .grid-pricing .pricing-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1.5px solid lightgray;
+  border-radius: 0.75rem;
+}
+main .pricing .grid-pricing .pricing-card .card-headline .card-name {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+main .pricing .grid-pricing .pricing-card .card-headline .card-description {
+  color: #71717a;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+}
+main .pricing .grid-pricing .pricing-card .card-headline .price {
+  margin-block: 1.5rem;
+  color: #18181b;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main .pricing .grid-pricing .pricing-card button {
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid lightgray;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  padding: 0.625rem 0.875rem;
+  margin-bottom: 1.5rem;
+}
+main .pricing .grid-pricing .pricing-card .button-dark {
+  color: #fff;
+  background-color: #18181b;
+}
+main .pricing .grid-pricing .pricing-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+main .pricing .grid-pricing .pricing-card ul li {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  color: #52525b;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+main .pricing .grid-pricing .pricing-card ul li svg {
+  color: #18181b;
+  width: 20px;
+  height: 20px;
+}
+main .pricing .grid-pricing .selected {
+  border: 2px solid #18181b;
+}
+main .testimonials {
+  display: flex;
+  flex-direction: column;
+  padding-block: 6rem;
+  gap: 4rem;
+}
+main .testimonials .testimonials-description {
+  text-align: center;
+}
+main .testimonials .testimonials-description h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+main .testimonials .testimonials-description h2 {
+  color: #18181b;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+main .testimonials .testimonials-description p {
+  color: #52525b;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+main .testimonials .grid-testimonials {
+  display: grid;
+  gap: 2rem;
+}
+main .testimonials .grid-testimonials .feedback-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.25rem 1rem;
+  border: 1.5px solid lightgray;
+  border-radius: 0.75rem;
+  gap: 1.5rem;
+}
+main .testimonials .grid-testimonials .feedback-card .feedback {
+  color: #52525b;
+}
+main .testimonials .grid-testimonials .feedback-card .person-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+main .testimonials .grid-testimonials .feedback-card .person-card img {
+  max-width: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+}
+main .testimonials .grid-testimonials .feedback-card .person-card .person-info {
+  display: flex;
+  flex-direction: column;
+}
+main .testimonials .grid-testimonials .feedback-card .person-card .person-info .name {
+  color: #18181b;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+main .testimonials .grid-testimonials .feedback-card .person-card .person-info .job-title {
+  color: #71717a;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+main .call-to-action {
+  padding: 6rem 1.5rem;
+  position: relative;
+  width: 100%;
+  background-color: #eef2ff;
+}
+main .call-to-action h2, main .call-to-action p {
+  text-align: center;
+}
+main .call-to-action p {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+}
+
 /*# sourceMappingURL=output.css.map */
