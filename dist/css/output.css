@@ -57,31 +57,40 @@ h6 {
 
 :root {
   font-family: "DM Sans", sans-serif;
+  background-color: #fafafa;
 }
 
 header {
   display: flex;
   align-items: center;
-  width: 100%;
+  background-color: #fafafa;
   position: sticky;
   top: 0;
   z-index: 50;
   backdrop-filter: blur(8px);
-  background-color: rgb(250, 250, 250);
   border-bottom: 1px solid lightgray;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   height: 4rem;
-  margin-inline: auto;
+}
+@media (min-width: 640px) {
+  header {
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    padding-inline: 8rem;
+  }
 }
 header .header-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-@media (min-width: 1024px) {
-  header .header-container {
-    justify-content: space-around;
-  }
 }
 header .header-container .logo {
   display: flex;
@@ -112,15 +121,16 @@ header .header-container .navbar-mobile.active {
   flex-direction: column;
   position: fixed;
   align-items: flex-start;
-  top: 4.5rem;
+  top: 4rem;
   left: 0;
-  padding-inline: 2rem;
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
   width: 100vw;
   height: calc(100vh - 4.5rem);
   background-color: white;
 }
 header .header-container .navbar-mobile.active .navbar-mobile-container {
-  margin-block: 0.5rem;
+  margin-bottom: 0.5rem;
   padding-bottom: 1.2rem;
   color: #71717a;
   width: 100%;
@@ -225,10 +235,6 @@ header .header-container .header-button button {
   }
 }
 
-main {
-  background-color: #fafafa;
-  padding-inline: 1rem;
-}
 main h3 {
   font-size: 1rem;
   color: #6366f1;
@@ -239,12 +245,41 @@ main .introduction {
   text-align: center;
   padding-block: 6rem;
   gap: 4rem;
+  padding-inline: 1rem;
+}
+@media (min-width: 640px) {
+  main .introduction {
+    padding-block: 8rem;
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .introduction {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  main .introduction {
+    padding-inline: 6rem;
+  }
 }
 main .introduction .introduction-headline h1 {
   padding-inline: 1rem;
   font-size: 3rem;
   line-height: 1;
   font-weight: 700;
+}
+@media (min-width: 640px) {
+  main .introduction .introduction-headline h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+    padding-inline: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .introduction .introduction-headline h1 {
+    padding-inline: 1.3rem;
+  }
 }
 main .introduction .introduction-headline p {
   color: #52525b;
@@ -287,6 +322,16 @@ main .introduction .rect {
   border-radius: 0.75rem;
   padding: 1rem;
 }
+@media (min-width: 640px) {
+  main .introduction .rect {
+    height: 26rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .introduction .rect {
+    height: 34rem;
+  }
+}
 main .introduction .rect .inner-rect {
   border: 1px dotted #d3d3d3;
   border-radius: 0.5rem;
@@ -294,7 +339,12 @@ main .introduction .rect .inner-rect {
   width: 100%;
   height: 12.5rem;
   background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg  fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40' stroke='%23d3d3d3' stroke-width='1.5' fill='none'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d3d3d3' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+@media (min-width: 640px) {
+  main .introduction .rect .inner-rect {
+    height: 100%;
+  }
 }
 main .introduction .references {
   display: flex;
@@ -309,18 +359,41 @@ main .introduction .references .logos {
   justify-content: space-between;
   column-gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 main .introduction .references .logos span svg {
   color: #18181b;
   width: 3rem;
   height: 3rem;
 }
+@media (min-width: 1024px) {
+  main .introduction .references .logos span svg {
+    width: 4rem;
+    height: 4rem;
+  }
+}
 main .features {
   display: flex;
   flex-direction: column;
   padding-block: 6rem;
   gap: 4rem;
+  padding-inline: 1rem;
+}
+@media (min-width: 640px) {
+  main .features {
+    padding-block: 8rem;
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .features {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  main .features {
+    padding-inline: 6rem;
+  }
 }
 main .features .features-description {
   text-align: center;
@@ -336,15 +409,42 @@ main .features .features-description h2 {
   letter-spacing: -0.025em;
   font-weight: 700;
 }
+@media (min-width: 640px) {
+  main .features .features-description h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .features .features-description h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
 main .features .features-description p {
   color: #52525b;
   margin-top: 2rem;
   font-size: 1.125rem;
   line-height: 2rem;
 }
+@media (min-width: 640px) {
+  main .features .features-description p {
+    padding-inline: 2.5rem;
+  }
+}
 main .features .grid-features {
   display: grid;
   gap: 2rem;
+}
+@media (min-width: 640px) {
+  main .features .grid-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1440px) {
+  main .features .grid-features {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+  }
 }
 main .features .grid-features .card {
   display: flex;
@@ -375,6 +475,23 @@ main .pricing {
   flex-direction: column;
   padding-block: 6rem;
   gap: 4rem;
+  padding-inline: 1rem;
+}
+@media (min-width: 640px) {
+  main .pricing {
+    padding-block: 8rem;
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .pricing {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  main .pricing {
+    padding-inline: 6rem;
+  }
 }
 main .pricing .pricing-description {
   text-align: center;
@@ -390,6 +507,12 @@ main .pricing .pricing-description h2 {
   letter-spacing: -0.025em;
   font-weight: 700;
 }
+@media (min-width: 1024px) {
+  main .pricing .pricing-description h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
 main .pricing .pricing-description p {
   color: #52525b;
   margin-top: 1.5rem;
@@ -400,18 +523,36 @@ main .pricing .grid-pricing {
   display: grid;
   gap: 2rem;
 }
+@media (min-width: 1024px) {
+  main .pricing .grid-pricing {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+  }
+}
 main .pricing .grid-pricing .pricing-card {
   display: flex;
+  flex: 1 1 0%;
   flex-direction: column;
   background-color: #fff;
   padding: 1.5rem;
   border: 1.5px solid lightgray;
   border-radius: 0.75rem;
 }
+@media (min-width: 1024px) {
+  main .pricing .grid-pricing .pricing-card {
+    padding: 2rem;
+  }
+}
 main .pricing .grid-pricing .pricing-card .card-headline .card-name {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
+}
+@media (min-width: 640px) {
+  main .pricing .grid-pricing .pricing-card .card-headline .card-name {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 main .pricing .grid-pricing .pricing-card .card-headline .card-description {
   color: #71717a;
@@ -419,11 +560,23 @@ main .pricing .grid-pricing .pricing-card .card-headline .card-description {
   line-height: 1.25rem;
   margin-top: 0.5rem;
 }
+@media (min-width: 640px) {
+  main .pricing .grid-pricing .pricing-card .card-headline .card-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 main .pricing .grid-pricing .pricing-card .card-headline .price {
   margin-block: 1.5rem;
   color: #18181b;
   font-size: 1.5rem;
   font-weight: 600;
+}
+@media (min-width: 640px) {
+  main .pricing .grid-pricing .pricing-card .card-headline .price {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 main .pricing .grid-pricing .pricing-card button {
   width: 100%;
@@ -461,11 +614,33 @@ main .pricing .grid-pricing .pricing-card ul li svg {
 main .pricing .grid-pricing .selected {
   border: 2px solid #18181b;
 }
+@media (min-width: 1024px) {
+  main .pricing .grid-pricing .selected {
+    scale: 1.1;
+  }
+}
 main .testimonials {
   display: flex;
   flex-direction: column;
   padding-block: 6rem;
+  padding-inline: 1rem;
   gap: 4rem;
+}
+@media (min-width: 640px) {
+  main .testimonials {
+    padding-block: 8rem;
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .testimonials {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  main .testimonials {
+    padding-inline: 6rem;
+  }
 }
 main .testimonials .testimonials-description {
   text-align: center;
@@ -481,6 +656,18 @@ main .testimonials .testimonials-description h2 {
   letter-spacing: -0.025em;
   font-weight: 700;
 }
+@media (min-width: 640px) {
+  main .testimonials .testimonials-description h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .testimonials .testimonials-description h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
 main .testimonials .testimonials-description p {
   color: #52525b;
   margin-top: 1.5rem;
@@ -490,6 +677,12 @@ main .testimonials .testimonials-description p {
 main .testimonials .grid-testimonials {
   display: grid;
   gap: 2rem;
+}
+@media (min-width: 768px) {
+  main .testimonials .grid-testimonials {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, auto));
+  }
 }
 main .testimonials .grid-testimonials .feedback-card {
   display: flex;
@@ -530,18 +723,286 @@ main .testimonials .grid-testimonials .feedback-card .person-card .person-info .
   line-height: 1.25rem;
 }
 main .call-to-action {
-  padding: 6rem 1.5rem;
-  position: relative;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 12rem 2.5rem;
   background-color: #eef2ff;
 }
-main .call-to-action h2, main .call-to-action p {
+main .call-to-action h2,
+main .call-to-action p {
   text-align: center;
 }
+main .call-to-action h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+@media (min-width: 640px) {
+  main .call-to-action h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
 main .call-to-action p {
+  color: #52525b;
   font-size: 1.125rem;
   line-height: 2rem;
   margin-top: 1.5rem;
+}
+main .call-to-action div {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+main .call-to-action div button {
+  border: none;
+  background-color: inherit;
+  color: #ffffff;
+  width: max-content;
+  background-color: #18181b;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  padding: 0.625rem 0.875rem;
+}
+main .faq {
+  display: flex;
+  flex-direction: column;
+  padding-block: 6rem;
+  padding-inline: 1rem;
+  gap: 4rem;
+  border-bottom: 1px solid lightgray;
+}
+@media (min-width: 640px) {
+  main .faq {
+    padding-block: 8rem;
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .faq {
+    padding-inline: 3.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  main .faq {
+    padding-inline: 16rem;
+  }
+}
+main .faq .faq-description {
+  text-align: center;
+  transition: 0.8s;
+}
+main .faq .faq-description h2 {
+  color: #18181b;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+@media (min-width: 640px) {
+  main .faq .faq-description h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .faq .faq-description h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+main .faq .faq-description p {
+  color: #52525b;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+main .faq .questions button {
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  padding-block: 1.5rem;
+}
+main .faq .questions button p {
+  color: #18181b;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+main .faq .questions button span {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .faq .questions button span svg {
+  width: 100%;
+  height: 1rem;
+}
+main .faq .questions button.toggled {
+  display: flex;
+}
+main .faq .questions button.toggled span {
+  rotate: 90deg;
+  transition: 0.2s;
+}
+main .faq .questions .div-toggle {
+  display: none;
+  padding-block: 1.5rem;
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+main .faq .questions .div-toggle p {
+  color: #71717a;
+  font-size: 1rem;
+}
+
+footer .footer-top {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+@media (min-width: 640px) {
+  footer .footer-top {
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer-top {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  footer .footer-top {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding-inline: 8rem;
+  }
+}
+footer .footer-top .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer-top .links h3 {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+footer .footer-top .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-top .links ul li {
+  color: #52525b;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+footer .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid lightgray;
+}
+@media (min-width: 1024px) {
+  footer .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  footer .footer-bottom {
+    padding-inline: 8rem;
+  }
+}
+footer .footer-bottom .footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.375rem;
+}
+footer .footer-bottom .footer-logos button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+footer .footer-bottom .footer-logos a {
+  padding: 0.5rem;
+}
+footer .footer-bottom .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+@media (min-width: 1024px) {
+  footer .footer-bottom .copyright {
+    margin: 0;
+    order: -1;
+  }
+}
+footer .footer-bottom .copyright p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #71717a;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+footer form label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #3f3f46;
+}
+footer form .email {
+  position: relative;
+  max-width: 24rem;
+  margin-top: 0.75rem;
+}
+footer form .email input {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1.5px solid lightgray;
+  border-radius: 9999px;
+}
+footer form .email span {
+  display: flex;
+  align-items: center;
+  padding-inline: 0.875rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-end: 0;
+}
+footer form .email span button {
+  border: none;
+  background-color: inherit;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.375rem 0.625rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  color: #ffffff;
+  background-color: #18181b;
 }
 
 /*# sourceMappingURL=output.css.map */
